@@ -87,4 +87,83 @@
             $this -> tipologia = $tipologia;
         }
     }
+
+    class Categoria {
+
+        private $id;
+        private $nome;
+        private $icona;
+
+        public function __construct($id,$nome,$icona) {
+
+            $this -> setId($id);
+            $this -> setNome($nome);
+            $this -> setIcona($icona);
+          
+        }
+
+        // METODI SETTER E GETTER
+        public function getId() {
+
+            return $this -> id;
+        }
+        public function setId() {
+
+            $this -> id = $id;
+        }
+
+        public function getNome() {
+
+            return $this -> nome;
+        }
+        public function setNome() {
+
+            $this -> nome = $nome;
+        }
+
+        public function getIcona() {
+
+            return $this -> icona;
+        }
+        public function setIcona() {
+
+            $this -> icona = $icona;
+        }
+
+    }
+
+    class Tipologia {
+
+        private $id;
+        private $nome;
+        
+        public function __construct($id,$nome) {
+
+            $this -> setId($id);
+            $this -> setNome($nome);
+            
+        }
+
+        // METODI SETTER E GETTER
+        public function getId() {
+
+            return $this -> id;
+        }
+        public function setId() {
+
+            $this -> id = $id;
+        }
+
+        public function getNome() {
+
+            return $this->nome;
+        
+          }
+        
+          public function setNome($nome) {
+        
+            $this->nome = $nome;
+        
+        }
+    }
 ?>
